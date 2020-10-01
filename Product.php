@@ -2,9 +2,9 @@
 
 class Product
 {
-    protected string $product;
-    protected float $price;
-    protected int $quantity;
+    public string $product;
+    public float $price;
+    public int $quantity;
 
     public function __construct(string $product, float $price, int $quantity)
     {
@@ -26,5 +26,10 @@ class Product
     public function getQuantity(): int
     {
         return $this->quantity;
+    }
+
+    public function setQuantity($amount)
+    {
+        $this->quantity += $amount;
     }
 }
