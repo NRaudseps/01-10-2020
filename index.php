@@ -5,7 +5,7 @@ require_once 'Product/ProductStorage.php';
 require_once 'Customer/Customer.php';
 require_once 'Customer/CustomerList.php';
 
-//The customers data gets collected from the file
+//The customers data gets collected from a file
 $costumer = CustomerList::getCustomers('customer-info.txt');
 
 //Creates a new storage of products. Money is written in cents
