@@ -32,7 +32,7 @@ class Customer
 
     public function setBroughtProducts(string $item): void
     {
-        if($item !== '') {
+        if ($item !== '') {
             $this->broughtProducts[] = $item;
         }
     }
