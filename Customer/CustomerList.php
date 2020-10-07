@@ -12,7 +12,7 @@ class CustomerList
         //Add name and money
         $customer = new Customer($file[0], $file[1]);
         //If has products then add to the customers bag
-        if(array_key_exists('2', $file)){
+        if (array_key_exists('2', $file)) {
             $customer->setBroughtProducts($file[2]);
         }
 
